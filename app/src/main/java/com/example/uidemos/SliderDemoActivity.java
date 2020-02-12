@@ -44,8 +44,6 @@ public class SliderDemoActivity extends AppCompatActivity {
         tvProgressLabel3 = findViewById(R.id.textView1Red);
         tvProgressLabel3.setText("Progress: " + progress3);
 
-
-
     }
 
     SeekBar.OnSeekBarChangeListener seekBarChangeListener = new SeekBar.OnSeekBarChangeListener() {
@@ -54,8 +52,6 @@ public class SliderDemoActivity extends AppCompatActivity {
         public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
             // updated continuously as the user slides the thumb
             tvProgressLabel1.setText("Progress: " + progress);
-            tvProgressLabel2.setText("Progress: " + progress);
-            tvProgressLabel3.setText("Progress: " + progress);
         }
 
         @Override
