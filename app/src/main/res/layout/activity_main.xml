@@ -4,15 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/pickerDemoButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/picker_demo"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/editTextDemoButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#003755"
+        android:textColor="#FFFFFF"
+        />
 
+    <Button
+        android:id="@+id/editTextDemoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/editText_demo"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pickerDemoButton"
+        app:layout_constraintEnd_toStartOf="@+id/slideerDemoButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pickerDemoButton"
+        android:background="#003755"
+        android:textColor="#FFFFFF"
+        />
+
+    <Button
+        android:id="@+id/slideerDemoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/slider_demo"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextDemoButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextDemoButton"
+        android:background="#003755"
+        android:textColor="#FFFFFF"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
